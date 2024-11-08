@@ -61,3 +61,43 @@ section form button{
     color : white;
     cursor : pointer;
 }
+
+/* accueil */
+
+.container{
+    width: 500px; /* le design a une largeur d'un écran de tablettzz ET petit PC */
+    margin: 0 auto;
+    }
+
+    header ul{ /* caller le menu en haut à droite */
+display: flex;
+justify-content: flex-end;
+    }
+
+    header ul li { /* espace entre les liens et la taille des liens*/
+    margin-left: 20px;  
+    font-size: 1.6rem;
+    }
+
+    .gallerie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallerie article{
+        width: 32%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallerie article img{
+        width: 100%;
+    }
+    
+    .gallerie article h2{
+        flex:1;
+    }
+    
+    
