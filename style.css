@@ -1,18 +1,19 @@
+```
 /*reset => remise à zero des règles css*/
-
-h1, p, figure, ul, li{ /*enlever les marges interne externes */
+h1, p, figure, ul, li{ /*enlever les marges interne externe */
     margin: 0;
     padding: 0;
 }
+
 body{ /* changer la police de caractère de toutes les balises*/
     font-family: sans-serif;
 }
 
-ul, li{/* enlever les points devants les listes */
+ul, li{ /* enlever les points devant les listes */
     list-style: none;
 }
 
-/*mise en page => faire en sorte que deux colonnes l'une à coté de l'autre*/
+/* mise en page => faire en sorte QUE deux colonnes l'une à côté de l'autre*/
 
 section{
     width: 700px;
@@ -20,84 +21,86 @@ section{
     display: flex;
     justify-content: space-between;
 }
-
 section .col1{
     width: 48%;
 }
-
 section .col2{
     width: 48%;
 }
+
 /* section .col2 ul{
 
 } */
 
 .liste{
     display: flex;
-    justify-content:  space-between;
+    justify-content: space-between;
     margin: 10px 0;
 }
-section form{
-display:  flex;
-flex-direction:colum;
-}
 
-section form{
+form{
     display: flex;
     flex-direction: column;
 }
 
-section form *{
+form > *:not(div){
     margin: 15px 0;
     padding: 8px 4px;
+    border : 1px solid blue ; 
 }
 
-section form textarea{
+form textarea{
     height: 80px;
 }
 
-section form button{
+form div textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px 0;
+    padding: 8px 4px;
+    border : 1px solid blue ; 
+}
+
+form button{
     background: blue;
-    color : white;
-    cursor : pointer;
+    color : white; 
+    cursor: pointer;
 }
 
 /* accueil */
 
 .container{
-    width: 500px; /* le design a une largeur d'un écran de tablettzz ET petit PC */
+    width: 700px; /* le design a une largeur d'un écran de tablette ET petit écran PC */
     margin: 0 auto;
-    }
+}
+header ul{ /* caller le menu en haut à droite */
+    display: flex;
+    justify-content: flex-end;
+}
 
-    header ul{ /* caller le menu en haut à droite */
-display: flex;
-justify-content: flex-end;
-    }
-
-    header ul li { /* espace entre les liens et la taille des liens*/
-    margin-left: 20px;  
+header ul li { /* espace entre les liens et taille des liens*/
+    margin-left: 20px;
     font-size: 1.6rem;
-    }
+}
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0;
+}
+.gallerie article{
+    width: 32%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
-    .gallerie{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.gallerie article img{
+    width: 100%;
+}
 
-    .gallerie article{
-        width: 32%;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gallerie article img{
-        width: 100%;
-    }
-    
-    .gallerie article h2{
-        flex:1;
-    }
-    
+.gallerie article h2{
+    flex:1; 
+}
+```
     
