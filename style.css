@@ -103,3 +103,13 @@ header ul li { /* espace entre les liens et taille des liens*/
     flex:1; 
 }
     
+padding: 8px 20px;
+}
+.titre-page{
+    color: red;
+}
+.mention{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
