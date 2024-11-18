@@ -1,4 +1,4 @@
-```
+
 /*reset => remise à zero des règles css*/
 h1, p, figure, ul, li{ /*enlever les marges interne externe */
     margin: 0;
@@ -102,5 +102,4 @@ header ul li { /* espace entre les liens et taille des liens*/
 .gallerie article h2{
     flex:1; 
 }
-```
     
